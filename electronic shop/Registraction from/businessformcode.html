@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* CSS for styling the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="next"] {
+            width: 10%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="next"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Business Info</h2>
+        <form method="post" action="" name="submit-to-google-sheet">
+                    
+            
+             <label for="Firm name">firm Name:</label>
+            <input type="text" id="firm name" name="firm name" placeholder="Enter your Firm name(optional)"  required>
+
+
+            <div class="input-name">
+                <label for="business type">Business Type:</label>
+            <input type="text" id="Business Type" name="Business Type" placeholder="Select your Business Type"  required>
+
+
+                <label for="Category">Category:</label>
+            <input type="text" id="Category" name="Category" placeholder="Select your Category"  required>
+
+            <label for="Sub-category">Sub-Category:</label>
+            <input type="text" id="Sub-category" name="Sub-category" placeholder="Select your Sub-Category"  required>
+        </div>
+
+        <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbz5MJmxeHtfr3C7TFpWkqay8SCDlhsqBVCrU4_ZJup3bWDVWN4qnsmRDPdZ2P2Mpyhm/exec>'
+        const form = document.forms['submit-to-google-sheet']
+        alert("hello")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
