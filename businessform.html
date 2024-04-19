@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Document</title>
+  <link rel="stylesheet"  href="index-sGMGEjGH.css">
+</head>
+<body>
+    <!-- heading -->
+    <div class="container flex justify-center">
+        <h1 class="text-center text-2xl  font-bold text-gray-600 bg-slate-300 rounded-2xl py-4 sm:px-56 px-10 truncate">
+            Registration Form
+        </h1>
+    </div>
+    <div class="flex justify-center">
+    <!-- form -->
+        <form class="w-full md:max-w-3xl mx-auto shadow-2xl md:m-12 rounded-2xl " id="multi-section-form" name="submit-to-google-sheet">
+            <!-- Section 1 -->
+            <div class="m-5 p-5 section" id="section-1">
+                <div class="flex justify-center">
+                    <h2 class="text-2xl font-bold text-gray-600 truncate">Personal Information</h2>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6 mt-8">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                      First Name
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" name="firstname" type="text" placeholder="Enter Your First Name ">
+                      
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        Last Name
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  name="lastname"  type="text" placeholder="Enter Your Last Name">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 mt-5">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                      Email
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" name="email" type="text" placeholder="Enter Your Email ">
+                      
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mt-5">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        Mobile Number
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="mobile" type="text" placeholder="Enter Mobile Number">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mt-5">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                       Whatsapp Number
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="whatsapp"  type="text" placeholder="Enter whatsapp Number">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mt-5">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                       Aadhar Number
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="aadhar" type="text" placeholder="Enter Aadhar Number">
+                    </div>
+                    
+                    
+                  </div>
+                <button type="button" class="py-1 px-4 bg-gray-700 hover:bg-slate-600 rounded-xl text-white next-section-btn">
+                    Next
+                </button>
+            </div>
+    
+            <!-- Section 2 -->
+            <div class="m-5 p-5 hidden section" id="section-2">
+                <!-- -->
+                   <div class="mb-5">
+                    <div class="flex justify-center">
+                        <h2 class="text-2xl font-bold text-gray-600">Location Information</h2>
+                    </div>
+                    <div class="w-full  mt-5">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        Working Area
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  name="taluka" type="text" placeholder="Enter Taluka">
+                      </div>
+                        <div class="flex flex-wrap -mx-3 mb-2">
+                          <div class="w-full px-3 my-5">
+                            
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                              Address
+                            </label>
+                            <textarea class="border border-gray-500 rounded-lg w-full h-24 text-gray-700" name="" id="" ></textarea>
+                          </div>
+                          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                              City/Town
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" name="City/Town" type="text" placeholder="Enter your City/Town">
+                          </div>
+                          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                                Pin Code
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" name="pincode" type="text" placeholder="400001">
+                            </div>
+                            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0 ">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                               Taluka
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" name="Taluka" type="text" placeholder="Enter your Taluka">
+                            </div>
+                            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0 mt-5">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                               District
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" name="District" type="text" placeholder="Enter your District">
+                            </div>
+                          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0 mt-5">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                              State
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" name="statelist" type="text" placeholder="Enter your State">
+                          </div>
+                        </div>
+                   </div>
+                <!--  -->
+                <button type="button" class="py-1 px-4 bg-gray-700 hover:bg-slate-600 rounded-xl text-white prev-section-btn">
+                    Previous
+                </button>
+                <button type="button" class="py-1 px-4 bg-gray-700 hover:bg-slate-600 rounded-xl text-white next-section-btn">
+                    Next
+                </button>
+            </div>
+    
+            <!-- Section 3 -->
+            <div class="m-5 p-5 hidden section " id="section-3">
+                <!--  -->
+                <div class="">
+                    <div class="flex justify-center ">
+                        <h2 class="text-2xl font-bold my-5 text-gray-600">Buisness Information</h2>
+                    </div>
+                       
+                        <div class="flex flex-wrap -mx-3 my-5">
+                          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                              Firm Name
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" name="name" type="text" placeholder="Enter your Firm Name (Optional)">
+                            
+                          </div>
+                          <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                              Buisness Type 
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="Type" type="text" placeholder="Enter buisness type">
+                          </div>
+                        </div>
+                        <div class="flex  flex-wrap">
+                          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                            Category
+                          </label>
+                          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" name="Category" type="text" placeholder="Enter Category">
+                          <div class="w-full grid md:grid-cols-4 grid-cols-2 mt-5  gap-4">
+                            <div>
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                Services Offered
+                               </label>
+                               <div class="relative">
+                                 <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state" name="Services Offered">
+                                   <option >Select</option>
+                                   <option>Electrician</option>
+                                   <option>Plumbing</option>
+                                   <option>Rental & Hire</option>
+                                   <option>Agro Field </option>
+                                   <option>Health Care </option>
+                                 </select>
+                                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                   <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                 </div>
+                               </div>
+                            </div>
+                            <div class="">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                Availability
+                               </label>
+                               <div class="relative">
+                                 <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state" name="Worker's Availability">
+                                   <option >Select</option>
+                                   <option>Monday</option>
+                                   <option>Tuesday</option>
+                                   <option>Wednesday</option>
+                                   <option>Thursday</option>
+                                   <option>Friday</option>
+                                   <option>Saturday</option>
+                                   <option>Sunday</option>
+                                 </select>
+                                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                   <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                 </div>
+                               </div>
+                            </div>
+                            <div class="w-full  px-3 mb-6 md:mb-0 ">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                Opening Time
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city"  name="time" type="text" placeholder="10:00 am">
+                            </div>
+                            <div class="w-full  px-3 mb-6 md:mb-0 ">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                Closing Time
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city"  name="time" type="text" placeholder="05:00 pm">
+                            </div>
+                          </div>
+                        </div>
+                       
+                        <div class="md:flex gap-8">
+                          <div class="w-full md:w-1/2  mt-5">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                            Working Area
+                            </label>
+                             <div class="relative">
+                              <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state"  name="Intresed to offer Services">
+                                <option >Select</option>
+                                <option>Village Level</option>
+                                <option>City Level</option>
+                                <option>District Level</option>
+                                <option>State Level</option>
+                                
+                              </select>
+                              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                              </div>
+                             </div>
+                          </div>
+                          <div class="w-full md:w-1/2 mt-5">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                            Interested in Premium Paid Subscription
+                            </label>
+                             <div class="relative">
+                              <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state"  name="Intresed in Premium Paid Subscription">
+                                <option >Select</option>
+                                <option>Yes (Rs. 100/- for each Services Per Year)</option>
+                                <option>No</option>
+                                <option>Later</option>
+                              </select>
+                              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                              </div>
+                             </div>
+                          </div>
+                          
+                        </div>
+                        <div class="flex mt-5 mb-5">
+                          <input type="checkbox" name="" id="condition" class="p-2 m-5 w-5"> <label for="condition"><p class="w-full text-gray-600 mt-4">I hearby agree to the Terms and Conditions as per the Supplier agreement policy of Janata Services</p></label> 
+                        </div>
+                </div>
+                <!--  -->
+              
+                <button type="button" class="py-1 px-4  bg-gray-700 hover:bg-slate-600 rounded-xl text-white prev-section-btn">
+                    Previous
+                </button>
+                <input type="submit" value="Submit" id="submit">
+               
+            </div>
+        </form>
+    </div>
+
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".section");
+    const nextBtns = document.querySelectorAll(".next-section-btn");
+    const prevBtns = document.querySelectorAll(".prev-section-btn");
+
+    nextBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            const currentSection = btn.closest(".section");
+            const nextSection = currentSection.nextElementSibling;
+            currentSection.classList.add("hidden");
+            nextSection.classList.remove("hidden");
+        });
+    });
+
+    prevBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            const currentSection = btn.closest(".section");
+            const prevSection = currentSection.previousElementSibling;
+            currentSection.classList.add("hidden");
+            prevSection.classList.remove("hidden");
+        });
+    });
+});
+
+
+    </script>
+
+    
+<script src="Google Sheet.js"></script>
+</body>
+</html>
