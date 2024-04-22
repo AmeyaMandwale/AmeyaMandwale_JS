@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Registration Form</title>
+  <link rel="stylesheet"  href="index-sGMGEjGH.css">
+</head>
+<body>
+    <!-- heading -->
+    <div class="container flex justify-center">
+        <h1 class="text-center text-2xl  font-bold text-gray-600 bg-slate-300 rounded-2xl py-4 sm:px-56 px-10 truncate">
+            Registration Form
+        </h1>
+    </div>
+    <div class="flex justify-center">
+    <!-- form -->
+        <form class="w-full md:max-w-3xl mx-auto shadow-2xl md:m-12 rounded-2xl " id="multi-section-form" name="submit-to-google-sheet">
+            <!-- Section 1 -->
+            <div class="m-5 p-5 section" id="section-1">
+                <div class="flex justify-center">
+                    <h2 class="text-2xl font-bold text-gray-600 truncate">Personal Information</h2>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6 mt-8">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                      First Name
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" name="firstname" type="text" placeholder="Enter Your First Name ">
+                      
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        Last Name
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name"  name="lastname" type="text" placeholder="Enter Your Last Name">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 mt-5">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                      Email
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name"  name="email" type="text" placeholder="Enter Your Email ">
+                      
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mt-5">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        Mobile Number
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="mobile" type="text" placeholder="Enter Mobile Number">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mt-5">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                       Whatsapp Number
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="whatsapp" type="text" placeholder="Enter whatsapp Number">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mt-5">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                       Aadhar Number
+                      </label>
+                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="aadhar" type="text" placeholder="Enter Aadhar Number">
+                    </div>
+                    
+                    
+                  </div>
+                <button type="button" class="py-1 px-4 bg-gray-700 hover:bg-slate-600 rounded-xl text-white next-section-btn">
+                    Next
+                </button>
+            </div>
+    
+            <!-- Section 2 -->
+            <div class="m-5 p-5 hidden section" id="section-2">
+                <!-- -->
+                   <div class="mb-5">
+                    <div class="flex justify-center">
+                        <h2 class="text-2xl font-bold text-gray-600">Location Information</h2>
+                    </div>
+                        <div class="flex flex-wrap -mx-3 mb-2">
+                          <div class="w-full px-3 my-5">
+                            
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                              Address
+                            </label>
+                            <textarea class="border border-gray-500 rounded-lg w-full h-24 text-gray-700" name="" id="" ></textarea>
+                          </div>
+                          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                              City/Town
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city"  name="City" type="text" placeholder="Enter your City/Town">
+                          </div>
+                          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                                Pin Code
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip"  name="pincode"   type="text" placeholder="400001">
+                            </div>
+                            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0 ">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                               Taluka
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" name="Taluka" type="text" placeholder="Enter your Taluka">
+                            </div>
+                            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0 mt-5">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                               District
+                              </label>
+                              <div class="relative">
+                                <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state" name="District">
+                                   <option >Select</option>
+                                    <option value="Ahmednagar">Ahmednagar</option>
+                                    <option value="Akola">Akola</option>
+                                    <option value="Amravati">Amravati</option>
+                                    <option value="Aurangabad">Aurangabad</option>
+                                    <option value="Beed">Beed</option>
+                                    <option value="Bhandara">Bhandara</option>
+                                    <option value="Buldhana">Buldhana</option>
+                                    <option value="Chandrapur">Chandrapur</option>
+                                    <option value="Dhule">Dhule</option>
+                                    <option value="Gadchiroli">Gadchiroli</option>
+                                    <option value="Gondia">Gondia</option>
+                                    <option value="Hingoli">Hingoli</option>
+                                    <option value="Jalgaon">Jalgaon</option>
+                                    <option value="Jalna">Jalna</option>
+                                    <option value="Kolhapur">Kolhapur</option>
+                                    <option value="Latur">Latur</option>
+                                    <option value="Mumbai City">Mumbai City</option>
+                                    <option value="Mumbai Suburban">Mumbai Suburban</option>
+                                    <option value="Nagpur">Nagpur</option>
+                                    <option value="Nanded">Nanded</option>
+                                    <option value="Nandurbar">Nandurbar</option>
+                                    <option value="Nashik">Nashik</option>
+                                    <option value="Osmanabad">Osmanabad</option>
+                                    <option value="Palghar">Palghar</option>
+                                    <option value="Parbhani">Parbhani</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Raigad">Raigad</option>
+                                    <option value="Ratnagiri">Ratnagiri</option>
+                                    <option value="Sangli">Sangli</option>
+                                    <option value="Satara">Satara</option>
+                                    <option value="Sindhudurg">Sindhudurg</option>
+                                    <option value="Solapur">Solapur</option>
+                                    <option value="Thane">Thane</option>
+                                    <option value="Wardha">Wardha</option>
+                                    <option value="Washim">Washim</option>
+                                    <option value="Yavatmal">Yavatmal</option>
+                                  
+                                  
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0 mt-5">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                              State
+                            </label>
+                            <div class="relative">
+                              <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state" name="state">
+                                 <option >Select</option>
+                               
+                                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                  <option value="Assam">Assam</option>
+                                  <option value="Bihar">Bihar</option>
+                                  <option value="Chhattisgarh">Chhattisgarh</option>
+                                  <option value="Goa">Goa</option>
+                                  <option value="Gujarat">Gujarat</option>
+                                  <option value="Haryana">Haryana</option>
+                                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                  <option value="Jharkhand">Jharkhand</option>
+                                  <option value="Karnataka">Karnataka</option>
+                                  <option value="Kerala">Kerala</option>
+                                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                  <option value="Maharashtra">Maharashtra</option>
+                                  <option value="Manipur">Manipur</option>
+                                  <option value="Meghalaya">Meghalaya</option>
+                                  <option value="Mizoram">Mizoram</option>
+                                  <option value="Nagaland">Nagaland</option>
+                                  <option value="Odisha">Odisha</option>
+                                  <option value="Punjab">Punjab</option>
+                                  <option value="Rajasthan">Rajasthan</option>
+                                  <option value="Sikkim">Sikkim</option>
+                                  <option value="Tamil Nadu">Tamil Nadu</option>
+                                  <option value="Telangana">Telangana</option>
+                                  <option value="Tripura">Tripura</option>
+                                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                  <option value="Uttarakhand">Uttarakhand</option>
+                                  <option value="West Bengal">West Bengal</option>
+                                
+                                
+                              </select>
+                              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                   </div>
+                <!--  -->
+                <button type="button" class="py-1 px-4 bg-gray-700 hover:bg-slate-600 rounded-xl text-white prev-section-btn">
+                    Previous
+                </button>
+                <button type="button" class="py-1 px-4 bg-gray-700 hover:bg-slate-600 rounded-xl text-white next-section-btn">
+                    Next
+                </button>
+            </div>
+    
+            <!-- Section 3 -->
+            <div class="m-5 p-5 hidden section " id="section-3">
+                <!--  -->
+                <div class="">
+                    <div class="flex justify-center ">
+                        <h2 class="text-2xl font-bold my-5 text-gray-600">Business Information</h2>
+                    </div>
+                       
+                        <div class="flex flex-wrap -mx-3 my-5">
+                          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                              Firm Name
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name"  name="name" type="text" placeholder="Enter your Firm Name (Optional)">
+                            
+                          </div>
+                          <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                              Business Type 
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="Type"  type="text" placeholder="Enter Business type">
+                          </div>
+                        </div>
+                        <div class="">
+                          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="category">
+                            Category
+                          </label>
+                          <div class="relative">
+                            <select class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="category" name="Category" onchange="changeSubCategoryOptions()">
+                              <option value="0">Select</option>
+                              <option value="1">Agriculture</option>
+                              <option value="2">Rent & Heir</option>
+                              <option value="3">Daily Needs</option>
+                              <option value="4">Emergency Services</option>
+                              <option value="5">Home Services</option>
+                              <option value="6">Wedding</option>
+                              <option value="7">Professional Services</option>
+                              <option value="8">Shops</option>
+                              <option value="9">Education</option>
+                              <option value="10">Automobile</option>
+                              <!-- Add more options as needed -->
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="w-full grid md:grid-cols-4 grid-cols-2 mt-5  gap-4">
+                            <div>
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="sub-category">
+                                Sub Category
+                              </label>
+                              <div class="relative">
+                                <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="sub-category" name="Services Offered">
+                                  <!-- Options will be dynamically populated based on the selected category -->
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                Availability
+                               </label>
+                               <div class="relative">
+                                 <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state"  name="Worker's Availability">
+                                   <option >Select</option>
+                                   <option>Monday</option>
+                                   <option>Tuesday</option>
+                                   <option>Wednesday</option>
+                                   <option>Thursday</option>
+                                   <option>Friday</option>
+                                   <option>Saturday</option>
+                                   <option>Sunday</option>
+                                 </select>
+                                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                   <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                 </div>
+                               </div>
+                            </div>
+                            <div class="w-full  px-3 mb-6 md:mb-0 ">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                Opening Time
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city"  name="time" type="text" placeholder="10:00 am">
+                            </div>
+                            <div class="w-full  px-3 mb-6 md:mb-0 ">
+                              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                Closing Time
+                              </label>
+                              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city"  name="time" type="text" placeholder="05:00 pm">
+                            </div>
+                          </div>
+                        </div>
+                       
+                        <div class="md:flex gap-8">
+                          <div class="w-full md:w-1/2  mt-5">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                            Working Area
+                            </label>
+                             <div class="relative">
+                              <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state"  name="taluka">
+                                <option >Select</option>
+                                <option>Village Level</option>
+                                <option>City Level</option>
+                                <option>District Level</option>
+                                <option>State Level</option>
+                                
+                              </select>
+                              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                              </div>
+                             </div>
+                          </div>
+                          
+                          
+                        </div>
+                        <div class="flex mt-5 mb-5">
+                          <input type="checkbox" name="" id="condition" class="p-2 m-5 w-5"> <label for="condition"><p class="w-full text-gray-600 mt-4">I hearby agree to the Terms and Conditions as per the Supplier agreement policy of Janata Services</p></label> 
+                        </div>
+                </div>
+                <!--  -->
+              
+                <button type="button" class="py-1 px-4  bg-gray-700 hover:bg-slate-600 rounded-xl text-white prev-section-btn">
+                    Previous
+                </button>
+                <button type="submit" class="py-1 px-4 bg-gray-700 hover:bg-slate-600 rounded-xl text-white">
+                    Submit
+                </button>
+               
+            </div>
+        </form>
+    </div>
+
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".section");
+    const nextBtns = document.querySelectorAll(".next-section-btn");
+    const prevBtns = document.querySelectorAll(".prev-section-btn");
+
+    nextBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            const currentSection = btn.closest(".section");
+            const nextSection = currentSection.nextElementSibling;
+            currentSection.classList.add("hidden");
+            nextSection.classList.remove("hidden");
+        });
+    });
+
+    prevBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            const currentSection = btn.closest(".section");
+            const prevSection = currentSection.previousElementSibling;
+            currentSection.classList.add("hidden");
+            prevSection.classList.remove("hidden");
+        });
+    });
+});
+
+  // categories 
+  function changeSubCategoryOptions() {
+    const categorySelect = document.getElementById('category');
+    const subCategorySelect = document.getElementById('sub-category');
+
+    // Remove all existing options
+    subCategorySelect.innerHTML = '';
+
+    // Add options based on the selected category
+    switch (categorySelect.value) {
+      case '1':
+        subCategorySelect.add(new Option( 'Crop Production','Crop Production'));
+        subCategorySelect.add(new Option('Livestock Farming','Livestock Farming'));
+        subCategorySelect.add(new Option('Agriculture marketing distribution and agro-processing','Agriculture marketing distribution and agro-processing'));
+        subCategorySelect.add(new Option('Soil Testing','Soil Testing'));
+        subCategorySelect.add(new Option('Irrigation System','Irrigation System'));
+        subCategorySelect.add(new Option('Agricultural machinery & Equipment','Agricultural machinery & Equipment'));
+        
+        break;
+      case '2':
+        subCategorySelect.add(new Option('Property management','Property management'));
+        subCategorySelect.add(new Option('Rental property management','Rental property management'));
+        subCategorySelect.add(new Option('Property maintenance','Property maintenance'));
+        subCategorySelect.add(new Option('Estate planning services','Estate planning services'));
+        
+        break;
+      case '3':
+        subCategorySelect.add(new Option('Grocery Stores /  Supermarkets'));
+        subCategorySelect.add(new Option('Pharmacies', 'Pharmacies'));
+        subCategorySelect.add(new Option('Bakeries', 'Bakeries'));
+        subCategorySelect.add(new Option('Household goods retailers', 'Household goods retailers'));
+        subCategorySelect.add(new Option('Laundry Services', 'Laundry Services'));
+        subCategorySelect.add(new Option('Personal grooming services', 'Personal grooming services'));
+
+       
+        break;
+        case '4':
+        subCategorySelect.add(new Option('Fire-fighting Services', ''));
+        subCategorySelect.add(new Option('Emergency Medical Services', ''));
+        subCategorySelect.add(new Option('Ambulance Services', ''));
+        subCategorySelect.add(new Option('Search & Rescue operations', ''));
+        subCategorySelect.add(new Option('Disaster Response & Management', ''));
+        break;
+        case '5':
+  subCategorySelect.add(new Option('Home cleaning', 'Home cleaning'));
+  subCategorySelect.add(new Option('Handyman Services', 'Handyman Services'));
+  subCategorySelect.add(new Option('Home Renovation', 'Home Renovation'));
+  subCategorySelect.add(new Option('Lawn Care', 'Lawn Care'));
+  subCategorySelect.add(new Option('Home Security', 'Home Security'));
+  subCategorySelect.add(new Option('Interior Design', 'Interior Design'));
+  break;
+case '6':
+  subCategorySelect.add(new Option('Wedding Planning', 'Wedding Planning'));
+  subCategorySelect.add(new Option('Venue Rental', 'Venue Rental'));
+  subCategorySelect.add(new Option('Catering Services', 'Catering Services'));
+  subCategorySelect.add(new Option('Photography & Videography', 'Photography & Videography'));
+  subCategorySelect.add(new Option('Entertainment', 'Entertainment'));
+  subCategorySelect.add(new Option('Wedding Attire', 'Wedding Attire'));
+  break;
+case '7':
+  subCategorySelect.add(new Option('Legal Services', 'Legal Services'));
+  subCategorySelect.add(new Option('Accounting & Tax Services', 'Accounting & Tax Services'));
+  subCategorySelect.add(new Option('Financial Services', 'Financial Services'));
+  subCategorySelect.add(new Option('Architectural Services', 'Architectural Services'));
+  subCategorySelect.add(new Option('Healthcare Services', 'Healthcare Services'));
+  break;
+case '8':
+  subCategorySelect.add(new Option('Grocery Store', 'Grocery Store'));
+  subCategorySelect.add(new Option('Clothing Store', 'Clothing Store'));
+  subCategorySelect.add(new Option('Electronics Store', 'Electronics Store'));
+  subCategorySelect.add(new Option('Department Store', 'Department Store'));
+  subCategorySelect.add(new Option('Book Store', 'Book Store'));
+  subCategorySelect.add(new Option('Convenience Store', 'Convenience Store'));
+  subCategorySelect.add(new Option('Speciality Shops (TOY, PET, Sports Equipment - Shop)', 'Speciality Shops (TOY, PET, Sports Equipment - Shop)'));
+  subCategorySelect.add(new Option('Gym', 'Gym'));
+  subCategorySelect.add(new Option('Yoga Center', 'Yoga Center'));
+  subCategorySelect.add(new Option('Craft Store', 'Craft Store'));
+  break;
+case '9':
+  subCategorySelect.add(new Option('Education Center for Disable People', 'Education Center for Disable People'));
+  subCategorySelect.add(new Option('Formal Education', 'Formal Education'));
+  subCategorySelect.add(new Option('Early childhood Education', 'Early childhood Education'));
+  subCategorySelect.add(new Option('Primary & Secondary Education', 'Primary & Secondary Education'));
+  subCategorySelect.add(new Option('Higher Education', 'Higher Education'));
+  subCategorySelect.add(new Option('Technical Education', 'Technical Education'));
+  subCategorySelect.add(new Option('Tutoring & Test Preparation', 'Tutoring & Test Preparation'));
+  break;
+case '10':
+  subCategorySelect.add(new Option('Vehicle Sales', 'Vehicle Sales'));
+  subCategorySelect.add(new Option('Vehicle Maintenance & Repair', 'Vehicle Maintenance & Repair'));
+  subCategorySelect.add(new Option('Vehicle Rental Services', 'Vehicle Rental Services'));
+  subCategorySelect.add(new Option('Auto-detailing & Car washes', 'Auto-detailing & Car washes'));
+  break;
+
+
+        
+
+      default:
+        subCategorySelect.add(new Option('Select', 'None'));
+        break;
+    }
+  }
+
+    </script>
+
+    
+
+    
+    <script src="Google Sheet.js"></script>
+
+    
+
+</body>
+</html>
