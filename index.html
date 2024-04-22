@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janata Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slideshow.css">
+    <!-- fonts links -->
+</head>
+<body>
+
+    <!-- top navbar -->
+    <div class="top-navbar">
+        <p>"ALL FOR ONE, ONE FOR ALL"</p>
+        <div class="icons">
+            <a href="#"><img src="./images/register.png" alt="" width="18px">Login</a>
+            <a href="RegistrationForm(new).html"><img src="./images/register.png" alt="" width="18px">Register</a>
+        </div>
+    </div>
+    <!-- top navbar -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><span id="span1">Ja</span>nata <span>Services</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="RegistrationForm(new).html">Registration from</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search">
+             
+             
+              <!-- <div class="input-group-prepend"> <label class="input-group-text px-1 pb-0 rounded-0 border-0 bg-transparent" for="inputGroupSelect01"><i class='bx bx-map bx-tada bx-fw'></i></label></div> -->
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <select class="custom-select select_search border-0" name="city_search" onchange="city_setting(this.value);" style="border-radius: 20px; height: 40px;">
+                            <option value="21" >Achalpur, Amravati</option>
+                            <option value="369" >Adilabad</option>
+                            <option value="370" >Adilabad</option>
+                            <option value="99" >Aheri, Gadchiroli</option>
+                            <option value="402" >Ahmadabad</option>
+                            <option value="64" >Ahmadnagar</option>
+                            <option value="159" >Ahmadpur, Latur</option>
+                            <option value="147" >Ajra, Kolhapur</option>
+                            <option value="309" >Akkalkot, Solapur</option>
+                            <option value="199" >Akkalkuwa, Nandurbar</option>
+                            <option value="65" >Akola, Ahmadnagar</option>
+                            <option value="14" >Akola</option>
+                            <option value="15" >Akot, Akola</option>
+                            <option value="200" >Akrani, Nandurbar</option>
+                            <option value="252" >Alibag, Raigarh</option>
+                            <option value="123" >Amalner, Jalgaon</option>
+                            <option value="138" >Ambad, Jalna</option>
+                            <option value="320" >Ambarnath, Thane</option>
+                            <option value="237" >Ambegaon, Pune</option>
+                            <option value="45" >Ambejogai, Bhandara</option>
+                            <option value="110" >Amgaon, Gondiya</option>
+                            <option value="22" >Amravati</option>
+                            <option value="395" >Amreli</option>
+                            <option value="23" >Anjangaon Surji, Amravati</option>
+                            <option value="183" >Ardhapur, Nanded</option>
+                            <option value="111" >Arjuni Morgaon, Gondiya</option>
+                            <option value="100" >Armori, Gadchiroli</option>
+                            <option value="349" >Arni, Yavatmal</option>
+                            <option value="335" >Arvi, Wardha</option>
+                            <option value="46" >Ashti, Bhandara</option>
+                            <option value="336" >Ashti, Wardha</option>
+                            <option value="278" >Atpadi, Sangli</option>
+                            <option value="118" >Aundha (Nagnath), Hingoli</option>
+                            <option value="35" >Aurangabad</option>
+                            <option value="160" >Ausa, Latur</option>
+                            <option value="350" >Babulgaon, Yavatmal</option>
+                            <option value="139" >Badnapur, Jalna</option>
+                            <option value="205" >Baglan, Nashik</option>
+                            <option value="16" >Balapur, Akola</option>
+                            <option value="79" >Ballarpur, Chandrapur</option>
+                            <option value="407" >Banas Kantha</option>
+                            <option value="238" >Baramati, Pune</option>
+                            <option value="376" >Bardoli, Surat</option>
+                            <option value="310" >Barshi, Solapur</option>
+                            <option value="17" >Barshitakli, Akola</option>
+                            <option value="119" >Basmath, Hingoli</option>
+                            <option value="148" >Bavda, Kolhapur</option>
+                            <option value="124" >Bhadgaon, Jalgaon</option>
+                            <option value="80" >Bhadravati, Chandrapur</option>
+                            <option value="101" >Bhamragad, Gadchiroli</option>
+                            <option value="44" >Bhandara</option>
+                            <option value="57" >Bhandara, Bid</option>
+                            <option value="389" >Bharuch</option>
+                            <option value="24" >Bhatkuli, Amravati</option>
+                            <option value="396" >Bhavnagar</option>
+                            <option value="321" >Bhiwandi, Thane</option>
+                            <option value="169" >Bhiwapur, Nagpur</option>
+                            <option value="184" >Bhokar, Nanded</option>
+                            <option value="140" >Bhokardan, Jalna</option>
+                            <option value="239" >Bhor, Pune</option>
+                            <option value="149" >Bhudargad, Kolhapur</option>
+                            <option value="220" >Bhum, Osmanabad</option>
+                            <option value="125" >Bhusawal, Jalgaon</option>
+                            <option value="56" >Bid</option>
+                            <option value="47" >Bid, Bhandara</option>
+                            <option value="185" >Biloli, Nanded</option>
+                            <option value="126" >Bodvad, Jalgaon</option>
+                            <option value="81" >Brahmapuri, Chandrapur</option>
+                            <option value="4" SELECTED>Buldana</option>
+                            <option value="161" >Chakur, Latur</option>
+                            <option value="127" >Chalisgaon, Jalgaon</option>
+                            <option value="102" >Chamorshi, Gadchiroli</option>
+                            <option value="150" >Chandgad, Kolhapur</option>
+                            <option value="82" >Chandrapur</option>
+                            <option value="25" >Chandur Railway, Amravati</option>
+                            <option value="26" >Chandurbazar, Amravati</option>
+                            <option value="206" >Chandvad, Nashik</option>
+                            <option value="27" >Chikhaldara, Amravati</option>
+                            <option value="5" >Chikhli, Buldana</option>
+                            <option value="83" >Chimur, Chandrapur</option>
+                            <option value="268" >Chiplun, Ratnagiri</option>
+                            <option value="128" >Chopda, Jalgaon</option>
+                            <option value="377" >Chorasi, Surat</option>
+                            <option value="322" >Dahanu, Thane</option>
+                            <option value="269" >Dapoli, Ratnagiri</option>
+                            <option value="351" >Darwha, Yavatmal</option>
+                            <option value="28" >Daryapur, Amravati</option>
+                            <option value="240" >Daund, Pune</option>
+                            <option value="186" >Deglur, Nanded</option>
+                            <option value="207" >Deola, Nashik</option>
+                            <option value="13" >Deolgaon Raja, Buldana</option>
+                            <option value="337" >Deoli, Wardha</option>
+                            <option value="162" >Deoni, Latur</option>
+                            <option value="112" >Deori, Gondiya</option>
+                            <option value="103" >Desaiganj (Vadasa), Gadchiroli</option>
+                            <option value="301" >Devgad, Sindhudurg</option>
+                            <option value="29" >Dhamangaon Railway, Amravati</option>
+                            <option value="104" >Dhanora, Gadchiroli</option>
+                            <option value="129" >Dharangaon, Jalgaon</option>
+                            <option value="187" >Dharmabad, Nanded</option>
+                            <option value="30" >Dharni, Amravati</option>
+                            <option value="48" >Dharur, Bhandara</option>
+                            <option value="94" >Dhule</option>
+                            <option value="352" >Digras, Yavatmal</option>
+                            <option value="208" >Dindori, Nashik</option>
+                            <option value="302" >Dodamarg, Sindhudurg</option>
+                            <option value="392" >Dohad</option>
+                            <option value="130" >Erandol, Jalgaon</option>
+                            <option value="105" >Etapalli, Gadchiroli</option>
+                            <option value="106" >Gadchiroli</option>
+                            <option value="98" >Gadchiroli</option>
+                            <option value="151" >Gadhinglaj, Kolhapur</option>
+                            <option value="403" >Gandhinagar</option>
+                            <option value="228" >Gangakhed, Parbhani</option>
+                            <option value="36" >Gangapur, Aurangabad</option>
+                            <option value="49" >Georai, Bhandara</option>
+                            <option value="141" >Ghansawangi, Jalna</option>
+                            <option value="353" >Ghatanji, Yavatmal</option>
+                            <option value="113" >Gondiya</option>
+                            <option value="84" >Gondpipri, Chandrapur</option>
+                            <option value="114" >Goregaon, Gondiya</option>
+                            <option value="270" >Guhagar, Ratnagiri</option>
+                            <option value="188" >Hadgaon, Nanded</option>
+                            <option value="371" >Hanumakonda</option>
+                            <option value="152" >Hatkanangle, Kolhapur</option>
+                            <option value="241" >Haveli, Pune</option>
+                            <option value="189" >Himayatnagar, Nanded</option>
+                            <option value="338" >Hinganghat, Wardha</option>
+                            <option value="170" >Hingna, Nagpur</option>
+                            <option value="120" >Hingoli</option>
+                            <option value="375" >hyderabad, Hyderabad</option>
+                            <option value="209" >Igatpuri, Nashik</option>
+                            <option value="242" >Indapur, Pune</option>
+                            <option value="142" >Jafferabad, Jalna</option>
+                            <option value="131" >Jalgaon</option>
+                            <option value="10" >Jalgaon (Jamod), Buldana</option>
+                            <option value="163" >Jalkot, Latur</option>
+                            <option value="143" >Jalna</option>
+                            <option value="66" >Jamkhed, Ahmadnagar</option>
+                            <option value="399" >Jamnagar</option>
+                            <option value="132" >Jamner, Jalgaon</option>
+                            <option value="289" >Jaoli, Satara</option>
+                            <option value="279" >Jat, Sangli</option>
+                            <option value="323" >Jawhar, Thane</option>
+                            <option value="229" >Jintur, Parbhani</option>
+                            <option value="85" >Jiwati, Chandrapur</option>
+                            <option value="397" >Junagadh</option>
+                            <option value="243" >Junnar, Pune</option>
+                            <option value="408" >Kachchh</option>
+                            <option value="280" >Kadegaon, Sangli</option>
+                            <option value="153" >Kagal, Kolhapur</option>
+                            <option value="50" >Kaij, Bhandara</option>
+                            <option value="221" >Kalamb, Osmanabad</option>
+                            <option value="354" >Kalamb, Yavatmal</option>
+                            <option value="171" >Kalameshwar, Nagpur</option>
+                            <option value="121" >Kalamnuri, Hingoli</option>
+                            <option value="210" >Kalwan, Nashik</option>
+                            <option value="324" >Kalyan, Thane</option>
+                            <option value="172" >Kamptee, Nagpur</option>
+                            <option value="378" >Kamrej, Surat</option>
+                            <option value="190" >Kandhar, Nanded</option>
+                            <option value="303" >Kankavli, Sindhudurg</option>
+                            <option value="37" >Kannad, Aurangabad</option>
+                            <option value="290" >Karad, Satara</option>
+                            <option value="339" >Karanja, Wardha</option>
+                            <option value="343" >Karanja, Washim</option>
+                            <option value="372" >Karimnagar</option>
+                            <option value="253" >Karjat, Raigarh</option>
+                            <option value="67" >Karjat, Ahmadnagar</option>
+                            <option value="311" >Karmala, Solapur</option>
+                            <option value="154" >Karvir, Kolhapur</option>
+                            <option value="173" >Katol, Nagpur</option>
+                            <option value="281" >Kavathemahankal, Sangli</option>
+                            <option value="355" >Kelapur, Yavatmal</option>
+                            <option value="254" >Khalapur, Raigarh</option>
+                            <option value="2" >Khamgaon, Buldana</option>
+                            <option value="366" >khamgaon, Buldana</option>
+                            <option value="282" >Khanapur, Sangli</option>
+                            <option value="291" >Khandala, Satara</option>
+                            <option value="292" >Khatav, Satara</option>
+                            <option value="244" >Khed, Pune</option>
+                            <option value="271" >Khed, Ratnagiri</option>
+                            <option value="394" >Kheda</option>
+                            <option value="38" >Khuldabad, Aurangabad</option>
+                            <option value="191" >Kinwat, Nanded</option>
+                            <option value="146" >Kolhapur</option>
+                            <option value="68" >Kopargaon, Ahmadnagar</option>
+                            <option value="107" >Korchi, Gadchiroli</option>
+                            <option value="293" >Koregaon, Satara</option>
+                            <option value="86" >Korpana, Chandrapur</option>
+                            <option value="304" >Kudal, Sindhudurg</option>
+                            <option value="174" >Kuhi, Nagpur</option>
+                            <option value="108" >Kurkheda, Gadchiroli</option>
+                            <option value="58" >Lakhandur, Bid</option>
+                            <option value="59" >Lakhani, Bid</option>
+                            <option value="272" >Lanja, Ratnagiri</option>
+                            <option value="164" >Latur</option>
+                            <option value="192" >Loha, Nanded</option>
+                            <option value="222" >Lohara, Osmanabad</option>
+                            <option value="11" >Lonar, Buldana</option>
+                            <option value="312" >Madha, Solapur</option>
+                            <option value="294" >Mahabaleshwar, Satara</option>
+                            <option value="255" >Mahad, Raigarh</option>
+                            <option value="356" >Mahagaon, Yavatmal</option>
+                            <option value="405" >Mahesana</option>
+                            <option value="193" >Mahoor, Nanded</option>
+                            <option value="379" >Mahuva, Surat</option>
+                            <option value="211" >Malegaon, Nashik</option>
+                            <option value="344" >Malegaon, Washim</option>
+                            <option value="6" >Malkapur, Buldana</option>
+                            <option value="313" >Malshiras, Solapur</option>
+                            <option value="305" >Malwan, Sindhudurg</option>
+                            <option value="295" >Man, Satara</option>
+                            <option value="365" >MANASHGAON, Buldana</option>
+                            <option value="373" >Mancherial</option>
+                            <option value="273" >Mandangad, Ratnagiri</option>
+                            <option value="380" >Mandvi, Surat</option>
+                            <option value="314" >Mangalvedhe, Solapur</option>
+                            <option value="256" >Mangaon, Raigarh</option>
+                            <option value="381" >Mangrol, Surat</option>
+                            <option value="345" >Mangrulpir, Washim</option>
+                            <option value="51" >Manjlegaon, Bhandara</option>
+                            <option value="346" >Manora, Washim</option>
+                            <option value="144" >Mantha, Jalna</option>
+                            <option value="230" >Manwath, Parbhani</option>
+                            <option value="357" >Maregaon, Yavatmal</option>
+                            <option value="175" >Mauda, Nagpur</option>
+                            <option value="245" >Mawal, Pune</option>
+                            <option value="3" >Mehkar, Buldana</option>
+                            <option value="257" >Mhasla, Raigarh</option>
+                            <option value="283" >Miraj, Sangli</option>
+                            <option value="60" >Mohadi, Bid</option>
+                            <option value="315" >Mohol, Solapur</option>
+                            <option value="325" >Mokhada, Thane</option>
+                            <option value="31" >Morshi, Amravati</option>
+                            <option value="9" >Motala, Buldana</option>
+                            <option value="194" >Mudkhed, Nanded</option>
+                            <option value="195" >Mukhed, Nanded</option>
+                            <option value="133" >Muktainagar (Edlabad), Jalgaon</option>
+                            <option value="87" >Mul, Chandrapur</option>
+                            <option value="109" >Mulchera, Gadchiroli</option>
+                            <option value="246" >Mulshi, Pune</option>
+                            <option value="326" >Murbad, Thane</option>
+                            <option value="18" >Murtijapur, Akola</option>
+                            <option value="258" >Murud, Raigarh</option>
+                            <option value="69" >Nagar, Ahmadnagar</option>
+                            <option value="88" >Nagbhir, Chandrapur</option>
+                            <option value="176" >Nagpur (Rural), Nagpur</option>
+                            <option value="177" >Nagpur (Urban), Nagpur</option>
+                            <option value="196" >Naigaon (Khairgaon), Nanded</option>
+                            <option value="197" >Nanded</option>
+                            <option value="212" >Nandgaon, Nashik</option>
+                            <option value="32" >Nandgaon-Khandeshwar, Amravati</option>
+                            <option value="8" >Nandura, Buldana</option>
+                            <option value="201" >Nandurbar</option>
+                            <option value="178" >Narkhed, Nagpur</option>
+                            <option value="390" >Narmada</option>
+                            <option value="213" >Nashik</option>
+                            <option value="387" >Navsari</option>
+                            <option value="202" >Nawapur, Nandurbar</option>
+                            <option value="358" >Ner, Yavatmal</option>
+                            <option value="70" >Nevasa, Ahmadnagar</option>
+                            <option value="165" >Nilanga, Latur</option>
+                            <option value="214" >Niphad, Nashik</option>
+                            <option value="382" >Olpad, Surat</option>
+                            <option value="223" >Osmanabad</option>
+                            <option value="134" >Pachora, Jalgaon</option>
+                            <option value="39" >Paithan, Aurangabad</option>
+                            <option value="231" >Palam, Parbhani</option>
+                            <option value="327" >Palghar, Thane</option>
+                            <option value="383" >Palsana, Surat</option>
+                            <option value="284" >Palus, Sangli</option>
+                            <option value="393" >Panch Mahals</option>
+                            <option value="316" >Pandharpur, Solapur</option>
+                            <option value="409" >Pandhurna</option>
+                            <option value="155" >Panhala, Kolhapur</option>
+                            <option value="259" >Panvel, Raigarh</option>
+                            <option value="224" >Paranda, Osmanabad</option>
+                            <option value="232" >Parbhani</option>
+                            <option value="52" >Parli, Bhandara</option>
+                            <option value="71" >Parner, Ahmadnagar</option>
+                            <option value="135" >Parola, Jalgaon</option>
+                            <option value="179" >Parseoni, Nagpur</option>
+                            <option value="145" >Partur, Jalna</option>
+                            <option value="406" >Patan</option>
+                            <option value="296" >Patan, Satara</option>
+                            <option value="72" >Pathardi, Ahmadnagar</option>
+                            <option value="233" >Pathri, Parbhani</option>
+                            <option value="53" >Patoda, Bhandara</option>
+                            <option value="19" >Patur, Akola</option>
+                            <option value="61" >Pauni, Bid</option>
+                            <option value="215" >Peint, Nashik</option>
+                            <option value="260" >Pen, Raigarh</option>
+                            <option value="297" >Phaltan, Satara</option>
+                            <option value="40" >Phulambri, Aurangabad</option>
+                            <option value="261" >Poladpur, Raigarh</option>
+                            <option value="89" >Pombhurna, Chandrapur</option>
+                            <option value="398" >Porbandar</option>
+                            <option value="247" >Pune City, Pune</option>
+                            <option value="248" >Purandhar, Pune</option>
+                            <option value="234" >Purna, Parbhani</option>
+                            <option value="359" >Pusad, Yavatmal</option>
+                            <option value="156" >Radhanagari, Kolhapur</option>
+                            <option value="73" >Rahta, Ahmadnagar</option>
+                            <option value="74" >Rahuri, Ahmadnagar</option>
+                            <option value="251" >Raigarh</option>
+                            <option value="274" >Rajapur, Ratnagiri</option>
+                            <option value="400" >Rajkot</option>
+                            <option value="90" >Rajura, Chandrapur</option>
+                            <option value="360" >Ralegaon, Yavatmal</option>
+                            <option value="180" >Ramtek, Nagpur</option>
+                            <option value="275" >Ratnagiri</option>
+                            <option value="267" >Ratnagiri</option>
+                            <option value="136" >Raver, Jalgaon</option>
+                            <option value="166" >Renapur, Latur</option>
+                            <option value="347" >Risod, Washim</option>
+                            <option value="262" >Roha, Raigarh</option>
+                            <option value="404" >Sabar Kantha</option>
+                            <option value="115" >Sadak-Arjuni, Gondiya</option>
+                            <option value="235" >Sailu, Parbhani</option>
+                            <option value="62" >Sakoli, Bid</option>
+                            <option value="95" >Sakri, Dhule</option>
+                            <option value="116" >Salekasa, Gondiya</option>
+                            <option value="340" >Samudrapur, Wardha</option>
+                            <option value="276" >Sangameshwar, Ratnagiri</option>
+                            <option value="75" >Sangamner, Ahmadnagar</option>
+                            <option value="277" >Sangli</option>
+                            <option value="317" >Sangole, Solapur</option>
+                            <option value="12" >Sangrampur, Buldana</option>
+                            <option value="298" >Satara</option>
+                            <option value="288" >Satara</option>
+                            <option value="181" >Savner, Nagpur</option>
+                            <option value="91" >Sawali, Chandrapur</option>
+                            <option value="306" >Sawantwadi, Sindhudurg</option>
+                            <option value="341" >Seloo, Wardha</option>
+                            <option value="122" >Sengaon, Hingoli</option>
+                            <option value="203" >Shahade, Nandurbar</option>
+                            <option value="328" >Shahapur, Thane</option>
+                            <option value="157" >Shahuwadi, Kolhapur</option>
+                            <option value="1" >Shegaon, Buldana</option>
+                            <option value="76" >Shevgaon, Ahmadnagar</option>
+                            <option value="285" >Shirala, Sangli</option>
+                            <option value="158" >Shirol, Kolhapur</option>
+                            <option value="96" >Shirpur, Dhule</option>
+                            <option value="249" >Shirur, Pune</option>
+                            <option value="54" >Shirur (Kasar), Bhandara</option>
+                            <option value="167" >Shirur-Anantpal, Latur</option>
+                            <option value="77" >Shrigonda, Ahmadnagar</option>
+                            <option value="78" >Shrirampur, Ahmadnagar</option>
+                            <option value="263" >Shrivardhan, Raigarh</option>
+                            <option value="41" >Sillod, Aurangabad</option>
+                            <option value="92" >Sindewahi, Chandrapur</option>
+                            <option value="300" >Sindhudurg</option>
+                            <option value="7" >Sindkhed Raja, Buldana</option>
+                            <option value="97" >Sindkhede, Dhule</option>
+                            <option value="216" >Sinnar, Nashik</option>
+                            <option value="42" >Soegaon, Aurangabad</option>
+                            <option value="318" >Solapur North, Solapur</option>
+                            <option value="319" >Solapur South, Solapur</option>
+                            <option value="236" >Sonpeth, Parbhani</option>
+                            <option value="264" >Sudhagad, Raigarh</option>
+                            <option value="367" >Surat</option>
+                            <option value="401" >Surendranagar</option>
+                            <option value="217" >Surgana, Nashik</option>
+                            <option value="265" >Tala, Raigarh</option>
+                            <option value="329" >Talasari, Thane</option>
+                            <option value="204" >Talode, Nandurbar</option>
+                            <option value="385" >Tapi</option>
+                            <option value="286" >Tasgaon, Sangli</option>
+                            <option value="20" >Telhara, Akola</option>
+                            <option value="33" >Teosa, </option>
+                            <option value="330" >Thane</option>
+                            <option value="388" >The Dangs</option>
+                            <option value="117" >Tirora, Gondiya</option>
+                            <option value="218" >Trimbakeshwar, Nashik</option>
+                            <option value="225" >Tuljapur, Osmanabad</option>
+                            <option value="63" >Tumsar, Bid</option>
+                            <option value="168" >Udgir, Latur</option>
+                            <option value="331" >Ulhasnagar, Thane</option>
+                            <option value="226" >Umarga, Osmanabad</option>
+                            <option value="361" >Umarkhed, Yavatmal</option>
+                            <option value="384" >Umarpada, Surat</option>
+                            <option value="182" >Umred, Nagpur</option>
+                            <option value="198" >Umri, Nanded</option>
+                            <option value="266" >Uran, Raigarh</option>
+                            <option value="332" >Vada, Thane</option>
+                            <option value="391" >Vadodara</option>
+                            <option value="307" >Vaibhavvadi, Sindhudurg</option>
+                            <option value="43" >Vaijapur, Aurangabad</option>
+                            <option value="386" >Valsad</option>
+                            <option value="333" >Vasai, Thane</option>
+                            <option value="250" >Velhe, Pune</option>
+                            <option value="308" >Vengurla, Sindhudurg</option>
+                            <option value="334" >Vikramgad, Thane</option>
+                            <option value="55" >Wadwani, Bhandara</option>
+                            <option value="299" >Wai, Satara</option>
+                            <option value="287" >Walwa, Sangli</option>
+                            <option value="362" >Wani, Yavatmal</option>
+                            <option value="374" >Warangal</option>
+                            <option value="342" >Wardha</option>
+                            <option value="93" >Warora, Chandrapur</option>
+                            <option value="34" >Warud, Amravati</option>
+                            <option value="227" >Washi, Osmanabad</option>
+                            <option value="348" >Washim</option>
+                            <option value="368" >Yadadri Bhuvanagiri</option>
+                            <option value="363" >Yavatmal</option>
+                            <option value="137" >Yawal, Jalgaon</option>
+                            <option value="219" >Yevla, Nashik</option>
+                            <option value="364" >Zari-Jamani, Yavatmal</option>
+                      </select>
+          </div>
+      </div>
+
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    
+
+
+
+
+
+
+    
+    <!-- home content -->
+    <section class="home" style="background-image: url(images/janata/janatab.png);" >
+    <div class="content" >
+      <h1> <span style="text-shadow: 2px 2px yellow;">Janata Services</span>
+        <br>
+       <span id="span2">Shegaon</span>
+      </h1>
+      <p>Now Get All Types Of Business, Services & work At One Place Without Going Anywhere.<br>You Can Also Register Your Services Today.
+      </p>
+      <div class="btn"> 
+        <a href="RegistrationForm(new).html"><button >Register Now</button>
+      </div>
+
+    </div>
+    <div class="img">
+      <div >
+        <div class="slideshow-container" style="margin-top: 150px; ">
+    
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/slideshow/i1.png" style="width:100%">
+            <div class="text">Image1</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/slideshow/i2.png" style="width:100%">
+            <div class="text">Image2</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slideshow/i3.png" style="width:100%">
+            <div class="text">Image3</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slideshow/i4.png" style="width:100%">
+            <div class="text">Image4</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slideshow/i5.png" style="width:100%">
+            <div class="text">Image5</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slideshow/i6.png" style="width:100%">
+            <div class="text">Image6</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slideshow/i7.png" style="width:100%">
+            <div class="text">Image7</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slideshow/i8.png" style="width:100%">
+            <div class="text">Image8</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    
+      </div>
+  
+    </div>
+  </section>
+    <!-- home content -->
+    
+
+
+
+
+
+
+    <!-- product cards -->
+    <div style="background-image: url(images/janata/servicesback.png);">
+    <div class="container" id="product-cards" style="background-image: url(/images/s.back.png);">
+      <h1 class="text-center">Services</h1>
+      <div class="row justify-content-center" style="margin-top: 30px;">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/i1.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Agriculture</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/i2.png" alt="">
+                <div class="card-body">
+                  <h3 class="text-center">Rent & Hiers</h3>
+                </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i3.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Daily Needs</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i8.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Emergency Services(paid)</h3>
+            
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i12.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Home Sevices</h3>
+           
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i17.png" alt="">
+          <div class="card-body">
+            <h3 class="text-center">Wedding</h3>
+            
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i9.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Professional Services</h3>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i16.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Shops</h3>
+             
+            </div>
+          </div>
+        </div>
+        <!-- More button -->
+       
+      </div>
+      <!-- Hidden rows (initially) -->
+      <div class="row justify-content-center" id="hiddenRows" style="margin-top: 30px; display: none;">
+         <!-- Third row -->
+         <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i13.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Transport</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i7.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Health</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i6.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Construction</h3>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i5.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Education</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Fourth row -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i10.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Daily Needs</h3>
+        </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i11.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Foods</h3>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/janata/i14.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Automobile Services</h3>
+        </div>
+          </div>
+        </div>
+
+        
+    <!-- Repeat the above div for each card in the fourth row -->
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body text-center">
+        <button id="showMoreBtn">MORE</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+const showMoreBtn = document.getElementById('showMoreBtn');
+const hiddenRows = document.getElementById('hiddenRows');
+
+let moreClicked = false;
+
+showMoreBtn.addEventListener('click', () => {
+  if (!moreClicked) {
+    hiddenRows.style.display = 'flex'; // Show hidden rows
+    showMoreBtn.textContent = 'LESS'; // Change button text to "LESS" when showing more rows
+    moreClicked = true;
+  } else {
+    hiddenRows.style.display = 'none'; // Hide hidden rows
+    showMoreBtn.textContent = 'MORE'; // Change button text back to "MORE" when hiding rows
+    moreClicked = false;
+  }
+});
+</script>
+      
+   
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Janata Services</h3>
+              <p>
+               Shegaon <br>
+                
+              </p>
+              <strong>Phone:</strong> 917972727375 <br>
+              <strong>Email:</strong> janataservices.ni3@gmail.com <br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Becomes a Partner</a></li>
+              
+             </ul>
+            </div>
+
+
+
+           
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Policy</h4>
+
+             <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#">Return Policy</a></li>
+              
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p> -->
+              <li class="py-1"><a href="tel:+917972727375" class=""><i class='bx bxs-phone bx-fw'></i>7972727375</a></li>
+
+              <div class="socail-links mt-3">
+                <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+919028797373" ><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="text-white px-1 text-center py-0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="https://www.youtube.com/watch?v=MtB81XWZtpQ" class="text-white px-1 text-center py-0" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Janata Sevices</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">SSGMCE STUDENT</a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="slideshow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
